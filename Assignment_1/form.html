@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>AltSchool Signup</title>
+    <script
+      src="https://kit.fontawesome.com/a2d8f550f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/assests/style/form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <h1 class="Logo">
+            <em>Welcome to <span>AltSchool!</span></em>
+          </h1>
+          <ul class="menubar">
+            <li class="bar">
+              <a href="./index.html"
+                >Student's Profile <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="dropdown">
+                <li><a href="./index.html#about me">About me</a></li>
+                <li>
+                  <a href="./index.html#Why I Joined the Program"
+                    >Why I joined</a
+                  >
+                </li>
+                <li><a href="./index.html#my goals">My goals</a></li>
+              </ul>
+            </li>
+            <li><a href="form.html" class="active">Signup here!</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="illustration">
+          <img src="/assests/image/signup.jpg" alt="error" />
+          <h1>Learn highly sought after skills without hassle.</h1>
+          <br />
+          <div class="footer-links">
+            <a
+              href="https://x.com/AltSchoolAfrica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/altschoolafrica/?hl=en"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/AltSchoolAfrica/?locale=eo_EO&_rdc=1&_rdr#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://ng.linkedin.com/school/altschoolafrica/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <address class="footer">
+            Written by
+            <a href="mailto:thelobafunto@gmail.com">Adewumi Ajibade</a>.
+            <br />
+            Visit us <a href="https://altschoolafrica.com/">here</a>.
+            <br />
+            Obafemi Awolowo University
+            <br />
+            Ile-ife, Osun State
+            <br />
+            Nigeria.
+            <br />
+            2025 &COPY; Adewumi Ajibade. All rights reserved.
+          </address>
+        </div>
+        <div class="signup">
+          <h2>Join us!</h2>
+          <p class="drop">
+            <em>Take the next steps to apply at AltSchool Africa</em>
+          </p>
+          <form autocomplete="on">
+            <div class="form-row">
+              <div>
+                <label for="first name">First name</label>
+                <input
+                  type="text"
+                  id="first name"
+                  name="firstname"
+                  placeholder="Betty"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last name">Last name</label>
+                <input
+                  type="text"
+                  id="last name"
+                  name="last name"
+                  placeholder="Mcwood"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email address"
+                  placeholder="abc@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="dob">Date of birth</label>
+                <input
+                  type="date"
+                  id="dob"
+                  name="date of birth"
+                  placeholder="mm/dd/yy"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Telephone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="Telephone"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="country">Country of Residence</label>
+                <select id="country" name="country" required>
+                  <option value>Country</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="France">France</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="India">India</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Korea">Korean</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Wales">Wales</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="state">State of Residence</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="password">Enter password</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div>
+                <label for="confirm">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm"
+                  placeholder=" Confirm Password"
+                  required
+                />
+              </div>
+            </div>
+            <label for="referral">How did you hear about us?</label>
+            <input
+              type="text"
+              id="referral"
+              name="referral"
+              placeholder="This is optional."
+            />
+            <br />
+            <p class="footer-text">
+              <em
+                >By clicking signup, you have confirmed that you read the
+                <a href="https://altschoolafrica.com/privacy-policy"
+                  >privacy policy</a
+                >
+                and agreed to the
+                <a href="https://altschoolafrica.com/terms-and-conditions"
+                  >terms of service</a
+                >.</em
+              >
+            </p>
+            <button type="submit" class="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
