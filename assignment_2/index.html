@@ -5,21 +5,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Available Courses at AltSchool</title>
+  <script
+      src="https://kit.fontawesome.com/a2d8f550f2.js"
+      crossorigin="anonymous"
+    ></script>
+  <link href="/assets/style/table.css" rel="stylesheet">
 </head>
 
 <body>
   <header id="top">
+    <div class="logo">
+      <img src="/assets/image/logo.png" alt="error" width="100" height="100" />
+    </div>
     <nav>
-      <ul>
-     <li><a href="media.html">Go to media</a></li>
-    <li><a href="#bottom">Go to bottom</a></li>
+<div class="nav-content">
+<h1 class="hello"><em>Welcome!</em></h1>
+<ul class="main-nav">
+<li class="bar">
+  <a href="index.html" class="active">Table<i class="fa-solid fa-caret-down"></i>
+  </a>
+  <ul class="dropdown">
+<li>
+  <a href="#bottom">bottom</a>
+</li>
   </ul>
+</li>
+<li class="bar">
+  <a href="./media.html">Media<i class="fa-solid fa-caret-down"></i>
+  </a>
+  <ul class="dropdown">
+    <li><a href="./media.html#Picture element">Picture</a></li>
+    <li><a href="./media.html#Video, source, and track elements"
+      >Video, source, and track</a
+    ></li>
+    <li><a href="./media.html#Audio element">Audio</a></li>
+    <li><a href="./media.html#iframe element">iframe</a></li>
+    <li><a href="./media.html#bottom">embed</a></li>
+  </ul>
+</li>
+</ul>
+</div>
   </nav>
-  <img src="/assets/image/logo.png" alt="error" width="150" height="150" />
-  <h1>AltSchool Africa Schools and Courses</h1>
+  <h1 id="title">AltSchool Africa Schools and Courses</h1>
   </header>
   <main>
-  <section>
+  <section class="essay">
     <p>
       Welcome to AltSchool Africa, home of innovative and prospective approach
       to education in Africa anchored on skills acquisition and
@@ -49,8 +79,8 @@
       <caption><b>Table 1: Schools and Courses in AltSchool Africa</b></caption>
       <thead>
         <tr>
-          <th>SCHOOL</th>
-          <th>AVAILABLE COURSES</th>
+          <th id="btl">SCHOOLS</th>
+          <th id="btr">AVAILABLE COURSES</th>
         </tr>
       </thead>
       <tbody>
@@ -85,20 +115,20 @@
 
         <tr>
         <tr>
-          <th rowspan="3">SCHOOL OF PRODUCT</th>
+          <th rowspan="3" id="bbl">SCHOOL OF PRODUCT</th>
           <td>Product Design</td>
         </tr>
         <tr>
           <td>Product Marketting</td>
         </tr>
         <tr>
-          <td>Product Management</td>
+          <td id="bbr">Product Management</td>
         </tr>
         </tr>
       </tbody>
     </table>
   </section>
-  <section>
+  <section class="essay">
     <p>
       Your journey to becoming a tech professional start here at AltSchool
       Africa. Whether you are a complete beginner to the tech industry or you

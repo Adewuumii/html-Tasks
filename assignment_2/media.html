@@ -4,98 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me in media form</title>
+    <script
+      src="https://kit.fontawesome.com/a2d8f550f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/assets/style/media.css" rel="stylesheet" />
   </head>
   <body>
     <header id="top">
+      <div class="logo">
+        <img
+          src="/assets/image/logo.png"
+          alt="error"
+          width="100"
+          height="100"
+        />
+      </div>
       <nav>
-        <ul>
-        <li><a href="index.html">AltSchool Courses</a></li>
-        <li><a href="#Picture element">Picture element</a></li>
-        <li><a href="#Video, source, and track elements"
-          >Video, source, and track elements</a
-        ></li>
-        <li><a href="#Audio element">Audio element</a></li>
-        <li><a href="#iframe element">iframe element</a></li>
-        <li><a href="#bottom">embed element</a></li>
-      </ul>
+        <div class="nav-content">
+          <h1 class="hello"><em>Welcome!</em></h1>
+          <ul class="main-nav">
+            <li class="bar">
+              <a href="./index.html"
+                >Table<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#bottom">bottom</a>
+                </li>
+              </ul>
+            </li>
+            <li class="bar">
+              <a href="media.html" class="active"
+                >Media<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="dropdown">
+                <li><a href="./media.html#Picture element">Picture</a></li>
+                <li>
+                  <a href="./media.html#Video, source, and track elements"
+                    >Video, source, and track</a
+                  >
+                </li>
+                <li><a href="./media.html#Audio element">Audio</a></li>
+                <li><a href="./media.html#iframe element">iframe</a></li>
+                <li><a href="./media.html#bottom">embed</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <h1>Hello, I'm Adewumi</h1>
     </header>
     <main>
-    <section>
-      <h1>Hello, I'm Adewumi</h1>
-      <p>
-        I'm a cloud engineering student at AltSchool Africa who is passionate
-        about transforming ideas into working cloud solutions. This is my first
-        attempt in tech and I'm loving the exciting challenge so far. When I'm
-        not coding or watching videos on LMS, I enjoy sharing knowledge with
-        other tech enthusiasts and staying up-to-date with the latest cloud
-        innovations.
-      </p>
-      <p>
-        This is a webpage introducing myself using all the media elements in
-        html.
-      </p>
-    </section>
-    <section id="Picture element">
-      <h2><i>Picture element</i></h2>
-      <picture>
-        <source
-          media="(max-width:600px)"
-          srcset="../assets/image/image1.jpeg"
-          width="400"
-          height="300"
-        />
-        <source
-          media="(max-width:900px)"
-          srcset="../assets/image/image2.jpeg"
+      <section>
+        <p>
+          I'm a cloud engineering student at AltSchool Africa who is passionate
+          about transforming ideas into working cloud solutions. This is my
+          first attempt in tech and I'm loving the exciting challenge so far.
+          When I'm not coding or watching videos on LMS, I enjoy sharing
+          knowledge with other tech enthusiasts and staying up-to-date with the
+          latest cloud innovations.
+        </p>
+        <p>
+          This is a webpage introducing myself using all the media elements in
+          html.
+        </p>
+      </section>
+      <section id="Picture element">
+        <h2><i>Picture element</i></h2>
+        <picture>
+          <source
+            media="(max-width:600px)"
+            srcset="../assets/image/image1.jpeg"
+            width="400"
+            height="300"
+          />
+          <source
+            media="(max-width:900px)"
+            srcset="../assets/image/image2.jpeg"
+            width="600"
+            height="450"
+          />
+          <source
+            media="(max-width:1200px)"
+            srcset="../assets/image/image3.jpeg"
+            width="800"
+            height="600"
+          />
+          <img
+            src="../assets/image/image4.jpeg"
+            alt="error"
+            width="500"
+            height="500"
+          />
+        </picture>
+      </section>
+      <section id="Video, source, and track elements">
+        <h2><i>Video, source, and track elements</i></h2>
+        <video controls width="600" height="400">
+          <source src="/assets/video/video1.mp4" />
+          <track src="/assets/document/video1.vtt" default kind="captions" />
+        </video>
+      </section>
+      <section id="Audio element">
+        <h2><i>Audio element</i></h2>
+        <audio src="/assets/audio/audio1.m4a" controls></audio>
+      </section>
+      <section id="iframe element">
+        <h2><i>iframe element</i></h2>
+        <iframe
+          src="/assets/document/altschool assignment 1.pdf"
+          title="Assigmnet"
+          controls
+          width="600"
+          height="400"
+        ></iframe>
+      </section>
+      <section id="embed element">
+        <h2><i>embed element</i></h2>
+        <embed
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5262016800207!2d4.520183310096952!3d7.517436710785399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10383709244c6427%3A0x930bcf60a44908e7!2sObafemi%20Awolowo%20University!5e0!3m2!1sen!2sng!4v1736026319227!5m2!1sen!2sng"
           width="600"
           height="450"
         />
-        <source
-          media="(max-width:1200px)"
-          srcset="../assets/image/image3.jpeg"
-          width="800"
-          height="600"
-        />
-        <img
-          src="../assets/image/image4.jpeg"
-          alt="error"
-          width="1000"
-          height="750"
-        />
-      </picture>
-    </section>
-    <section id="Video, source, and track elements">
-      <h2><i>Video, source, and track elements</i></h2>
-      <video controls width="600" height="400">
-        <source src="/assets/video/video1.mp4" />
-        <track src="/assets/document/video1.vtt" default kind="captions" />
-      </video>
-    </section>
-    <section id="Audio element">
-      <h2><i>Audio element</i></h2>
-      <audio src="/assets/audio/audio1.m4a" controls></audio>
-    </section>
-    <section id="iframe element">
-      <h2><i>iframe element</i></h2>
-      <iframe
-        src="/assets/document/altschool assignment 1.pdf"
-        title="Assigmnet"
-        controls
-        width="600"
-        height="400"
-      ></iframe>
-    </section>
-    <section id="embed element">
-      <h2><i>embed element</i></h2>
-      <embed
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5262016800207!2d4.520183310096952!3d7.517436710785399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10383709244c6427%3A0x930bcf60a44908e7!2sObafemi%20Awolowo%20University!5e0!3m2!1sen!2sng!4v1736026319227!5m2!1sen!2sng"
-        width="600"
-        height="450"
-      />
-    </section>
-  </main>
-    <br>
+      </section>
+    </main>
+    <br />
     <footer id="bottom">
       <a href="#top">Back to top</a>
     </footer>

@@ -1,161 +1,281 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    margin: 10px;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.5;
-    color: black;
-    background-color: lightgray;
+body {
+  margin: 10px;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5;
+  color: black;
+  background-color: lightgray;
 }
-.nav-content{
-    height: 80px;
-    margin: 10px;
- padding: 0 5%;
-border-radius: 10px;
-background-color: black;
-display: flex;
-align-content: center;
-justify-content: space-between;
+.nav-content {
+  height: 80px;
+  margin: 10px;
+  padding: 0 5%;
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.Logo{
-    color: whitesmoke;
-   font-size: 2rem;
+.Logo {
+  color: whitesmoke;
+  font-size: 2rem;
 }
-span{
-    color: brown;
+span {
+  color: brown;
 }
-.menubar{
-    list-style: none;
-    display: flex;
+.menubar {
+  list-style: none;
+  display: flex;
 }
-.menubar li{
-    padding: 20px;
-    position: relative;
+.menubar li {
+  padding: 20px;
+  position: relative;
 }
-.menubar li a{
-    color: brown;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+.menubar li a {
+  color: brown;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
 }
-.menubar li a:hover{
-    color: gray;
+.menubar li a:hover {
+  color: gray;
 }
-.bar:hover ul{
-display: block;
+.bar:hover ul {
+  display: block;
 }
-.dropdown{
-   position: absolute;
-   display: none;
-    background-color: black;
-    border-radius: 0px 0px 5px 5px;
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
 }
-.dropdown li{
-    list-style: none;
-    line-height: 1;
-    width: 150px;
-    padding: 6px;
+.dropdown li {
+  list-style: none;
+  line-height: 1;
+  width: 150px;
+  padding: 6px;
 }
-.dropdown li a{
-    font-size: 12px;
-    padding: 10px;
+.dropdown li a {
+  font-size: 12px;
+  padding: 10px;
 }
-.dropdown li a:hover{
-    color: gray;
+.dropdown li a:hover {
+  color: gray;
 }
-.active{
-    color: gray !important;
+.active {
+  color: gray !important;
 }
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
-      border-radius: 8px;
-      box-shadow: 3px 2px 2px  black;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 3px 2px 2px black;
 }
-.illustration{
-    flex: 1;
-    background-color: aliceblue;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.illustration {
+  flex: 1;
+  background-color: aliceblue;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .illustration img {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
-  }
-  .illustration h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .signup{
-    padding: 40px;
-    flex: 1;
-    margin-top: -50px ;
-  }
-  .signup h2{
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .drop{
-    margin-top: -30px;
-   margin-bottom: 20px;
-  }
-  .form-row{
-    display: flex;
-    gap: 20px;
-  }
-  label{
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.illustration h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.signup {
+  padding: 40px;
+  flex: 1;
+  margin-top: -50px;
+}
+.signup h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.drop {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+label {
   font-size: 15px;
   font-weight: bolder;
   margin-top: 20px;
+}
+input,
+select {
+  padding: 12px;
+  margin-top: -5px;
+  border: 1px solid brown;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+.submit {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 4px 4px;
+  border: none;
+  color: brown;
+  background-color: black;
+  cursor: pointer;
+  width: 100%;
+}
+.submit:hover {
+  color: gray;
+}
+.footer-text {
+  color: brown;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.footer-links a,
+.footer a {
+  color: brown;
+  text-decoration: none;
+}
+.footer-text a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
   }
-  input, select{
-    padding: 12px;
-    margin-top: -5px;
-    border: 1px solid brown;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 100%;
+
+  .menubar {
+    flex-direction: column;
   }
-   .submit{
+
+  .menubar li {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .illustration {
     padding: 20px;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    border-radius: 4px 4px;
-    border: none;
-    color: brown;
-    background-color: black;
-    cursor: pointer;
+  }
+
+  .signup {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menubar {
     width: 100%;
-   }
-   .submit:hover{
-    color: gray;
-   }
-   .footer-text{
-    color: brown;
-    margin-top: 20px;
-    font-weight: bold;
-   }
-   .footer-links a, .footer a{
-    color: brown;
-   }
-   .footer-text a{
-    color: black;
-   }
-   a:hover{
-    color: gray;
-   }
+    padding: 0;
+  }
+
+  .menubar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .Logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .illustration img {
+    max-width: 300px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+  footer {
+    padding: 8px;
+  }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #info {
+    font-size: 1rem;
+  }
+
+  .menubar li {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  input,
+  select {
+    padding: 10px;
+  }
+
+  .submit {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}

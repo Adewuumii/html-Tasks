@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(185, 170, 160);
+  line-height: 2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.nav-content {
+  height: 60px;
+  margin: 10px;
+  padding: 0 2%;
+  background-color: rgb(116, 80, 80);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hello {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+}
+.main-nav li {
+  padding: 10px;
+  position: relative;
+}
+.main-nav li a:hover {
+  color: rgb(88, 51, 5);
+}
+.bar:hover ul {
+  display: block;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(116, 80, 80);
+  border-radius: 20px;
+  list-style: none;
+  padding: 10px;
+}
+.bar a {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+.dropdown li a {
+  font-size: small;
+}
+.active {
+  color: rgb(102, 48, 48) !important;
+}
+#title {
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px auto;
+}
+main {
+  margin: 20px;
+}
+.essay {
+  text-align: justify;
+  margin: 15px;
+  padding: 20px;
+}
+table {
+  text-align: center;
+  margin: 20px;
+  border-collapse: separate;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px rgb(61, 18, 18);
+  width: 70%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+thead {
+  background-color: rgb(116, 80, 80);
+  height: 60px;
+}
+#btl {
+  border-top-left-radius: 20px;
+}
+#btr {
+  border-top-right-radius: 20px;
+}
+#bbl {
+  border-bottom-left-radius: 20px;
+}
+#bbr {
+  border-bottom-right-radius: 20px;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  color: rgb(39, 11, 11);
+  font-weight: bolder;
+  font-size: larger;
+  border: 1px solid rgb(185, 170, 160);
+  text-decoration: none;
+  box-shadow: 2px 3px 2px black;
+  border-radius: 10px;
+  padding: 5px;
+}
+footer a:hover {
+  color: rgb(88, 51, 5);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+    font-size: smaller;
+  }
+}
+
+/* Tablets and small laptops (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .nav-content {
+    padding: 15px;
+  }
+
+  .hello {
+    font-size: 1.75rem;
+  }
+
+  table {
+    width: 90%;
+    font-size: medium;
+  }
+}
+
+/* Large desktops (1025px and above) */
+@media (min-width: 1025px) {
+  table {
+    width: 70%;
+    font-size: larger;
+  }
+}

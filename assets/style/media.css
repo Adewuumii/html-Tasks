@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(185, 170, 160);
+  line-height: 2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.nav-content {
+  height: 60px;
+  margin: 10px;
+  padding: 0 2%;
+  background-color: rgb(116, 80, 80);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hello {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+}
+.main-nav li {
+  padding: 10px;
+  position: relative;
+}
+.main-nav li a:hover {
+  color: rgb(88, 51, 5);
+}
+.bar:hover ul {
+  display: block;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(116, 80, 80);
+  border-radius: 20px;
+  list-style: none;
+  padding: 10px;
+}
+.bar a {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+.dropdown li a {
+  font-size: small;
+}
+.active {
+  color: rgb(102, 48, 48) !important;
+}
+section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(143, 125, 125, 0.8);
+  border-radius: 15px;
+}
+p {
+  line-height: 2.5;
+}
+h2 {
+  font-size: 1.5rem;
+  color: rgb(83, 67, 46);
+  margin-bottom: 10px;
+}
+video,
+audio,
+iframe,
+embed,
+picture img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 2px 6px 10px black;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  border: 1px solid rgb(185, 170, 160);
+  text-decoration: none;
+  box-shadow: 2px 3px 2px black;
+  border-radius: 10px;
+  padding: 5px;
+}
+footer a:hover {
+  color: rgb(88, 51, 5);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-content {
+    padding: 15px;
+  }
+  .hello {
+    font-size: 1.75rem;
+  }
+
+  video,
+  audio,
+  iframe,
+  embed {
+    width: 90%;
+  }
+}
+
+@media (min-width: 901px) {
+  section {
+    width: 70%;
+    margin: 20px auto;
+  }
+}

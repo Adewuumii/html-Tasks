@@ -1,151 +1,252 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body{
-    margin: 10px;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.5;
-    color: black;
-    background-color: lightgray;
+body {
+  margin: 10px;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5;
+  color: black;
+  background-color: lightgray;
 }
-header{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: thistle;
-    border-radius: 15px 30px;
-    box-shadow: 5px 2px 2px black;
+header {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: thistle;
+  border-radius: 15px 30px;
+  box-shadow: 5px 2px 2px black;
 }
-#info{
-    text-align: center;
+#info {
+  text-align: center;
 }
-.nav-content{
-    height: 80px;
-    margin: 10px;
- padding: 0 5%;
-border-radius: 10px;
-background-color: black;
-display: flex;
-align-content: center;
-justify-content: space-between;
+.nav-content {
+  height: 80px;
+  margin: 10px;
+  padding: 0 5%;
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.Logo{
-    color: whitesmoke;
-   font-size: 2rem;
+.Logo {
+  color: whitesmoke;
+  font-size: 2rem;
 }
-span{
-    color: brown;
+span {
+  color: brown;
 }
-.menubar{
-    list-style: none;
-    display: flex;
+.menubar {
+  list-style: none;
+  display: flex;
 }
-.menubar li{
-    padding: 20px;
-    position: relative;
+.menubar li {
+  padding: 20px;
+  position: relative;
 }
-.menubar li a{
-    color: brown;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+.menubar li a {
+  color: brown;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
 }
-.menubar li a:hover{
-    color: gray;
+.menubar li a:hover {
+  color: gray;
 }
-.bar:hover ul{
-display: block;
+.bar:hover ul {
+  display: block;
 }
-.dropdown{
-   position: absolute;
-   display: none;
-    background-color: black;
-    border-radius: 0px 0px 5px 5px;
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
 }
-.dropdown li{
-    list-style: none;
-    line-height: 1;
-    width: 150px;
-    padding: 6px;
+.dropdown li {
+  list-style: none;
+  line-height: 1;
+  width: 150px;
+  padding: 6px;
 }
-.dropdown li a{
-    font-size: 12px;
-    padding: 10px;
+.dropdown li a {
+  font-size: 12px;
+  padding: 10px;
 }
-.dropdown li a:hover{
-    color: gray;
+.dropdown li a:hover {
+  color: gray;
 }
-.active{
-    color: gray !important;
+.active {
+  color: gray !important;
 }
-h1{
-    margin: 20px;
-    font-size: 2.5em;
-    font-weight: bolder;
-    text-shadow: 2px 2px rgb(36, 21, 1);
+h1 {
+  margin: 20px;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgb(36, 21, 1);
 }
-header img{
-    border-radius: 50%;
-    border: 3px solid brown;
-    object-fit: fill;
+header img {
+  border-radius: 50%;
+  border: 3px solid brown;
+  object-fit: fill;
 }
-#email-link{
-color: brown;
+#email-link {
+  color: brown;
+  text-decoration: none;
 }
-#email-link:hover{
-    color: gray;
+#email-link:hover {
+  color: gray;
 }
-header p{
-    font-weight: bolder;
+header p {
+  font-weight: bolder;
 }
-main{
-    border-radius: 15px 30px;
-    box-shadow: 5px 2px 2px black;
-    padding: 20px;
+main {
+  border-radius: 15px 30px;
+  box-shadow: 5px 2px 2px black;
+  padding: 20px;
 }
-section{
-   margin-bottom: 10px; 
-   border-radius: 15px 30px;
-   box-shadow: 5px 3px 3px black;
-    background-color: thistle;
-    padding: 10px;
+section {
+  margin-bottom: 10px;
+  border-radius: 15px 30px;
+  box-shadow: 5px 3px 3px black;
+  background-color: thistle;
+  padding: 10px;
 }
-h2{
-    text-align: center;
-    text-shadow: 1px 1px rgb(36, 21, 1);
-    margin-bottom: 20px;
-    border-bottom: 2px solid brown;
+h2 {
+  text-align: center;
+  text-shadow: 1px 1px rgb(36, 21, 1);
+  margin-bottom: 20px;
+  border-bottom: 2px solid brown;
 }
-ul{
-    padding-left: 50px;
+ul {
+  padding-left: 50px;
   list-style-type: circle;
 }
-li{
-    margin-bottom: 20px;
+li {
+  margin-bottom: 20px;
 }
-li b, ::marker{
-    color: brown;
+li b,
+::marker {
+  color: brown;
 }
-p{
-    text-align: justify;
-    margin-bottom: 10px;
+p {
+  text-align: justify;
+  margin-bottom: 10px;
 }
-footer{
-    text-align: center;
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+footer a {
+  color: brown;
+  font-weight: bolder;
+  border: 2px solid thistle;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+  text-decoration: none;
+}
+footer a:hover {
+  color: gray;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .menubar {
+    flex-direction: column;
+  }
+
+  .menubar li {
     padding: 15px;
-    margin-top: 10px;
-}
-footer a{
-    color: brown;
-    font-weight: bolder;
-    border: 2px solid thistle;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  footer {
     padding: 10px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
+  }
 }
-footer a:hover{
-    color: gray;
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menubar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .menubar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .Logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+  footer {
+    padding: 8px;
+  }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #info {
+    font-size: 1rem;
+  }
+
+  .menubar li {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
 }
