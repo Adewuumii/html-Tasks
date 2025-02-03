@@ -45,7 +45,7 @@ span {
 .menubar li a:hover {
   color: gray;
 }
-.bar:hover ul {
+.bar:hover ul{
   display: block;
 }
 .dropdown {

@@ -50,6 +50,7 @@ body {
   color: black;
   font-size: larger;
   font-weight: bolder;
+  text-decoration: none;
 }
 .dropdown li a {
   font-size: small;
