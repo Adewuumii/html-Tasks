@@ -15,9 +15,9 @@ header {
   text-align: center;
   padding: 10px;
   margin-bottom: 15px;
-  background-color: thistle;
+  background-color: rgb(129, 121, 129);
   border-radius: 15px 30px;
-  box-shadow: 5px 2px 2px black;
+  box-shadow: 4px 4px 10px black;
 }
 #info {
   text-align: center;
@@ -104,14 +104,14 @@ header p {
 }
 main {
   border-radius: 15px 30px;
-  box-shadow: 5px 2px 2px black;
+  box-shadow: 4px 4px 10px black;
   padding: 20px;
 }
 section {
   margin-bottom: 10px;
   border-radius: 15px 30px;
-  box-shadow: 5px 3px 3px black;
-  background-color: thistle;
+  box-shadow: 4px 4px 10px black;
+  background-color: rgb(129, 121, 129);
   padding: 10px;
 }
 h2 {
