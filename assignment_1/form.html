@@ -153,7 +153,12 @@
             <div class="form-row">
               <div>
                 <label for="country">Country of Residence</label>
-                <select id="country" name="country" autocomplete="country-name" required>
+                <select
+                  id="country"
+                  name="country"
+                  autocomplete="country-name"
+                  required
+                >
                   <option value>Country</option>
                   <option value="Algeria">Algeria</option>
                   <option value="Belgium">Belgium</option>
@@ -215,8 +220,11 @@
                 />
               </div>
             </div>
-            <label for="referral">How did you hear about us?</label>
+            <label for="referral" class="ref-text"
+              >How did you hear about us?</label
+            >
             <input
+              class="referral"
               type="text"
               id="referral"
               name="referral"

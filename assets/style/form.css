@@ -45,7 +45,7 @@ span {
 .menubar li a:hover {
   color: gray;
 }
-.bar:hover ul{
+.bar:hover ul {
   display: block;
 }
 .dropdown {
@@ -131,7 +131,14 @@ select {
   border: 1px solid brown;
   border-radius: 4px;
   font-size: 14px;
+  width: 300px;
+}
+.ref-text {
+  margin-left: 35%;
+}
+.referral {
   width: 100%;
+  text-align: center;
 }
 .submit {
   padding: 20px;
@@ -167,116 +174,93 @@ a:hover {
 
 /* Media Queries for Responsiveness */
 
-/* Tablet view */
-@media (max-width: 1024px) {
-  .nav-content {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-  }
-
-  .menubar {
-    flex-direction: column;
-  }
-
-  .menubar li {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  main {
-    padding: 15px;
-  }
-
-  .illustration {
-    padding: 20px;
-  }
-
-  .signup {
-    padding: 20px;
-  }
-
-  footer {
-    padding: 10px;
-  }
-}
-
-/* Mobile view */
+/* Tablets (768px and below) */
 @media (max-width: 768px) {
   .nav-content {
     flex-direction: column;
-    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+    text-align: center;
   }
-
   .menubar {
-    width: 100%;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
   }
-
   .menubar li {
-    display: block;
     padding: 10px;
   }
-
-  .Logo {
-    font-size: 1.5rem;
+  .container {
+    flex-direction: column;
+    padding: 20px;
   }
-
-  h1 {
-    font-size: 1.8em;
+  .illustration,
+  .signup {
+    flex: none;
+    width: 100%;
+    padding: 20px;
   }
-
-  .illustration img {
-    max-width: 300px;
+  input,
+  select {
+    width: 100%;
   }
-
-  section {
-    padding: 12px;
+  .ref-text {
+    margin-left: 0;
   }
-
-  footer {
-    padding: 8px;
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
-/* Extra small mobile screens */
+/* Mobile devices (480px and below) */
 @media (max-width: 480px) {
-  body {
-    padding: 10px;
+  .Logo {
+    font-size: 1.5rem;
   }
-
-  header img {
-    width: 100px;
-    height: 100px;
+  .illustration h1,
+  .signup h2 {
+    font-size: 2rem;
   }
-
-  h1 {
-    font-size: 1.5em;
+  .nav-content {
+    padding: 5px;
   }
-
-  #info {
-    font-size: 1rem;
+  .menubar {
+    padding: 5px 0;
   }
-
   .menubar li {
-    padding: 10px;
-    font-size: 14px;
+    padding: 5px;
   }
-
-  input,
-  select {
-    padding: 10px;
-  }
-
   .submit {
     padding: 15px;
     font-size: 1.2rem;
   }
+  .ref-text {
+    margin-left: 0;
+  }
+}
 
-  footer {
-    font-size: 14px;
+/* Extra small screens (320px and below) */
+@media (max-width: 320px) {
+  .Logo {
+    font-size: 1.2rem;
+  }
+  .illustration h1,
+  .signup h2 {
+    font-size: 1.5rem;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  input,
+  select {
+    font-size: 12px;
+  }
+  .submit {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  .ref-text {
+    margin-left: 0;
   }
 }
